@@ -5,133 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE AI DAILY SAMACHAR</title>
     <style>
+        /* Old, yellowed/sepia paper texture */
         body {
+            background-color: #f5f5dc;
             font-family: 'Playfair Display', serif;
-            background-color: #F5F5DC;
             margin: 0;
             padding: 0;
         }
+        
+        /* Black ink */
+        h1, h2, h3, h4, h5, h6, p {
+            color: #000;
+        }
+        
+        /* Vintage border */
+        .masthead {
+            background-image: linear-gradient(to bottom, #ccc, #aaa);
+            background-size: 100% 10px;
+            background-position: 0 0;
+            padding: 10px;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        /* Multi-column layout */
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #F2F2F2;
-            border: 1px solid #ccc;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .masthead {
-            text-align: center;
-            font-size: 48px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .columns {
-            display: flex;
-            flex-direction: column;
-        }
+        
         .column {
-            flex: 1;
-            padding: 20px;
+            float: left;
+            width: 45%;
+            margin: 0 10px;
         }
-        .article {
-            background-color: #FFFFFF;
-            padding: 20px;
-            border: 1px solid #ccc;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        
+        .column h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
         }
-        .weather {
-            background-color: #F2F2F2;
-            padding: 20px;
-            border: 1px solid #ccc;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .editor-note {
-            background-color: #F2F2F2;
-            padding: 20px;
-            border: 1px solid #ccc;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .advertisements {
-            background-color: #F2F2F2;
-            padding: 20px;
-            border: 1px solid #ccc;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .ad {
+        
+        .column p {
             margin-bottom: 20px;
         }
-        .ad img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 10px;
+        
+        /* Responsive design */
+        @media only screen and (max-width: 600px) {
+            .column {
+                float: none;
+                width: 100%;
+                margin: 0;
+            }
+        }
+        
+        /* Classic serif fonts */
+        @font-face {
+            font-family: 'Playfair Display';
+            src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        }
+        
+        @font-face {
+            font-family: 'Merriweather';
+            src: url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+        }
+        
+        .article {
+            font-family: 'Merriweather', serif;
         }
     </style>
 </head>
 <body>
+    <div class="masthead">
+        <h1>THE AI DAILY SAMACHAR</h1>
+    </div>
     <div class="container">
-        <div class="masthead">
-            THE AI DAILY SAMACHAR
+        <div class="column">
+            <h2>This Month in AI</h2>
+            <p>The rise and risks of AI shopping agents: From AI-powered shopping to fresh research insights and the latest governance moves, here's what you need to know this month. (Source: The World Economic Forum)</p>
+            <p>Read more: <a href="#">The World Economic Forum</a></p>
         </div>
-        <div class="columns">
-            <div class="column">
-                <div class="article">
-                    <h2>The Rise and Risks of AI Shopping Agents</h2>
-                    <p>By Our Staff Reporter</p>
-                    <p>This month, the World Economic Forum highlighted the growing trend of AI-powered shopping agents. These agents use machine learning algorithms to personalize shopping experiences, predict customer behavior, and optimize inventory management. While they promise to revolutionize the retail industry, experts warn of the risks associated with their use.</p>
-                    <p>One of the main concerns is the potential for bias in AI decision-making. If the data used to train the agents is biased, it can lead to discriminatory outcomes and perpetuate existing social inequalities. Additionally, the reliance on AI agents may lead to job losses and decreased human interaction in the retail sector.</p>
-                    <p>Despite these risks, many retailers are embracing AI-powered shopping agents as a way to stay competitive in the market. As the technology continues to evolve, it will be essential to address these concerns and ensure that AI agents are used responsibly and ethically.</p>
-                </div>
-                <div class="article">
-                    <h2>Labor Market Impacts of AI: A New Measure and Early Evidence</h2>
-                    <p>By Our Staff Reporter</p>
-                    <p>Anthropic, a leading AI research organization, has introduced a new measure of AI displacement risk. The measure, called observed exposure, combines theoretical LLM capability and real-world usage data to estimate the potential impact of AI on the labor market.</p>
-                    <p>Early evidence suggests that AI is already having a significant impact on certain industries, such as customer service and data entry. However, the impact on other sectors, such as healthcare and education, is less clear.</p>
-                    <p>As AI continues to advance, it is essential to develop policies and strategies that mitigate its negative impacts on the labor market. This may include retraining programs, education and upskilling initiatives, and social safety nets to support workers who are displaced by AI.</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="article">
-                    <h2>2025: The State of Generative AI in the Enterprise</h2>
-                    <p>By Our Staff Reporter</p>
-                    <p>A report by Menlo Ventures found that generative AI is spreading across enterprises at an unprecedented pace. This trend is driven by the increasing demand for automation, personalization, and innovation in the business world.</p>
-                    <p>However, the report also highlights the challenges associated with implementing generative AI in the enterprise. These include data quality issues, model drift, and the need for specialized skills and expertise.</p>
-                    <p>To overcome these challenges, organizations must invest in data quality, model monitoring, and employee training. They must also develop strategies for integrating generative AI into their existing workflows and processes.</p>
-                </div>
-                <div class="article">
-                    <h2>Trend Micro State of AI Security Report, 1H 2025</h2>
-                    <p>By Our Staff Reporter</p>
-                    <p>Trend Micro's State of AI Security report highlights the growing threat of AI-powered cybercrime. As AI adoption continues to rise, cybercriminals are using AI to launch more sophisticated and targeted attacks.</p>
-                    <p>The report also notes that AI is transforming the way businesses approach security. Organizations are using AI to detect and respond to threats in real-time, and to improve their overall security posture.</p>
-                    <p>To stay ahead of the threat, organizations must invest in AI-powered security solutions and develop strategies for integrating AI into their existing security frameworks.</p>
-                </div>
-            </div>
+        <div class="column">
+            <h2>The State of Generative AI in the Enterprise</h2>
+            <p>For all the fears of over-investment, AI is spreading across enterprises at a pace with no precedent in modern software history. (Source: Menlo Ventures)</p>
+            <p>Read more: <a href="#">Menlo Ventures</a></p>
         </div>
-        <div class="weather">
-            <h2>AI Climate</h2>
-            <p>Today's forecast: Partly cloudy with a high chance of innovation.</p>
-            <p>Temperature: 75°F (24°C)</p>
-            <p>Humidity: 60%</p>
-        </div>
-        <div class="editor-note">
-            <h2>Editor's Note</h2>
-            <p>As AI continues to transform our world, it is essential to stay informed about the latest developments and trends. The AI Daily Samachar is committed to providing you with the most up-to-date and accurate information on AI-related news and research.</p>
-            <p>Thank you for reading!</p>
-        </div>
-        <div class="advertisements">
-            <h2>Advertisements</h2>
-            <div class="ad">
-                <img src="robot-parts.jpg" alt="Robot Parts">
-                <p>Get the latest robot parts and accessories at Robot World!</p>
-            </div>
-            <div class="ad">
-                <img src="ai-software.jpg" alt="AI Software">
-                <p>Develop your own AI applications with our cutting-edge software!</p>
-            </div>
+        <div class="column">
+            <h2>Trend Micro State of AI Security Report, 1H 2025</h2>
+            <p>Trend Micro's State of AI Security report explores how AI's rapid adoption is transforming both business efficiency and cybercrime methods, and what you can do to stay ahead of the threats. (Source: www.trendmicro.com)</p>
+            <p>Read more: <a href="#">www.trendmicro.com</a></p>
         </div>
     </div>
-    <footer>
-        <p>&copy; 2026 The AI Daily Samachar</p>
-    </footer>
+    <div class="container">
+        <div class="column">
+            <h2>Why A.I. Didn’t Transform Our Lives in 2025</h2>
+            <p>Cal Newport writes on autonomous A.I. agents, and predictions by such tech leaders Sam Altman and Andrej Karpathy, of OpenAI. (Source: The New Yorker)</p>
+            <p>Read more: <a href="#">The New Yorker</a></p>
+        </div>
+        <div class="column">
+            <h2>AI tool detects LLM-generated text in research papers and peer reviews</h2>
+            <p>Authors and peer reviewers are failing to disclose the use of LLMs despite journal policies limiting their use. (Source: Nature)</p>
+            <p>Read more: <a href="#">Nature</a></p>
+        </div>
+        <div class="column">
+            <h2>The 10 Hottest Agentic AI Tools And Agents Of 2025 (So Far)</h2>
+            <p>AI innovation in agentic AI, agents and new products in 2025 is led by AWS, Databricks, Dataiku, Google Cloud, GitHut, IBM, Salesforce, and more. (Source: CRN)</p>
+            <p>Read more: <a href="#">CRN</a></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="column">
+            <h2>LLM Suite named 2025 “Innovation of the Year” by American Banker</h2>
+            <p>American Banker honored JPMorganChase with its 2025 Innovation of the Year Award Grand Prize for its work on LLM Suite, the firm's language model suite. (Source: JPMorganChase)</p>
+            <p>Read more: <a href="#">JPMorganChase</a></p>
+        </div>
+        <div class="column">
+            <h2>Here's JPMorgan Chase's blueprint to become the world’s first fully AI-powered megabank</h2>
+            <p>JPMorgan, the world's largest bank by market cap, is being "fundamentally rewired" to automate knowledge work across its operations, according to a report by CNBC. (Source: CNBC)</p>
+            <p>Read more: <a href="#">CNBC</a></p>
+        </div>
+        <div class="column">
+            <h2>AI’s Escalating Sophistication Presents New Legal Dilemmas</h2>
+            <p>AI Agents and the Rise of Virtual Task Makers Artificial intelligence has evolved rapidly, progressing from simple automation tools to complex systems that can learn and adapt. (Source: New York State Bar Association)</p>
+            <p>Read more: <a href="#">New York State Bar Association</a></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="column">
+            <h2>The Rise of AI Agents: Anticipating Cybersecurity Opportunities, Risks, and the Next Frontier</h2>
+            <p>This study explores the cybersecurity implications of AI agents and presents a three-pronged framework to guide secure design and responsible deployment. (Source: R Street Institute)</p>
+            <p>Read more: <a href="#">R Street Institute</a></p>
+        </div>
+    </div>
+    <p class="article">March 15, 2026</p>
 </body>
 </html>
