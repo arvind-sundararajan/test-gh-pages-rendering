@@ -4,119 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE AI DAILY SAMACHAR</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #F5F5F5;
+            color: #000;
+            font-family: 'Helvetica Neue', sans-serif;
+            padding: 40px;
+        }
+        .header {
+            border-bottom: 5px solid #000;
+            padding-bottom: 20px;
+            text-align: center;
+            color: #D32F2F;
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .headline {
+            border-left: 8px solid #D32F2F;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+        .headline-large {
+            font-size: 36px;
+        }
+        .headline-medium {
+            font-size: 24px;
+        }
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="masthead">
-            <h1>THE AI DAILY SAMACHAR</h1>
-            <h2>AUTONOMOUS AGENT EDITION</h2>
+    <div class="header">THE AI DAILY SAMACHAR</div>
+    <div class="news-grid">
+        <div class="headline headline-large">
+            <span class="icon">🚀</span>This month in AI: The rise and risks of AI shopping agents: From AI-powered shopping to fresh research insights and the latest governance moves, here's what you need to know this month. <span class="icon">🤖</span> (Source: The World Economic Forum)
         </div>
-    </header>
-    <main>
-        <section class="latest-news">
-            <h2>Latest AI News 🚀</h2>
-            <ul>
-                <li>
-                    <h3>This month in AI: The rise and risks of AI shopping agents 🤖</h3>
-                    <p>From AI-powered shopping to fresh research insights and the latest governance moves, here's what you need to know this month. (Source: The World Economic Forum)</p>
-                    <ul>
-                        <li>📊 AI shopping agents on the rise</li>
-                        <li>🚨 Risks and challenges associated with AI shopping</li>
-                        <li>📚 Latest research insights and governance moves</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>2025: The State of Generative AI in the Enterprise 💠</h3>
-                    <p>For all the fears of over-investment, AI is spreading across enterprises at a pace with no precedent in modern software history. (Source: Menlo Ventures)</p>
-                    <ul>
-                        <li>💻 AI adoption in the enterprise</li>
-                        <li>📈 Growth and challenges associated with AI</li>
-                        <li>💡 Future of AI in the enterprise</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Trend Micro State of AI Security Report, 1H 2025 ⚡</h3>
-                    <p>Trend Micro's State of AI Security report explores how AI's rapid adoption is transforming both business efficiency and cybercrime methods,... (Source: www.trendmicro.com)</p>
-                    <ul>
-                        <li>🚨 AI security threats and challenges</li>
-                        <li>💻 AI-powered cybercrime methods</li>
-                        <li>📊 Business efficiency and AI adoption</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Why A.I. Didn’t Transform Our Lives in 2025 🧠</h3>
-                    <p>Cal Newport writes on autonomous A.I. agents, and predictions by such tech leaders Sam Altman and Andrej Karpathy, of OpenAI. (Source: The New Yorker)</p>
-                    <ul>
-                        <li>🤖 Autonomous A.I. agents</li>
-                        <li>📊 Predictions and challenges associated with AI</li>
-                        <li>💡 Future of AI and human interaction</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section class="latest-articles">
-            <h2>Latest Articles 📰</h2>
-            <ul>
-                <li>
-                    <h3>AI tool detects LLM-generated text in research papers and peer reviews 📚</h3>
-                    <p>Authors and peer reviewers are failing to disclose the use of LLMs despite journal policies limiting their use. (Source: Nature)</p>
-                    <ul>
-                        <li>📊 LLM-generated text detection</li>
-                        <li>🚨 Journal policies and LLM use</li>
-                        <li>📚 Impact on research and academia</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>The 10 Hottest Agentic AI Tools And Agents Of 2025 (So Far) 🚀</h3>
-                    <p>AI innovation in agentic AI, agents and new products in 2025 is led by AWS, Databricks, Dataiku, Google Cloud, GitHut, IBM, Salesforce,... (Source: CRN)</p>
-                    <ul>
-                        <li>🚀 Top agentic AI tools and agents</li>
-                        <li>💻 AI innovation and adoption</li>
-                        <li>📊 Market trends and predictions</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>LLM Suite named 2025 “Innovation of the Year” by American Banker 💠</h3>
-                    <p>American Banker honored JPMorganChase with its 2025 Innovation of the Year Award Grand Prize for its work on LLM Suite, the firm's... (Source: JPMorganChase)</p>
-                    <ul>
-                        <li>💻 LLM Suite and its impact</li>
-                        <li>📊 Innovation and award recognition</li>
-                        <li>🚀 Future of banking and AI</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Here's JPMorgan Chase's blueprint to become the world’s first fully AI-powered megabank 🤖</h3>
-                    <p>JPMorgan, the world's largest bank by market cap, is being "fundamentally rewired" to automate knowledge work across its operations,... (Source: CNBC)</p>
-                    <ul>
-                        <li>🤖 AI-powered banking and automation</li>
-                        <li>📊 JPMorgan's AI strategy and goals</li>
-                        <li>🚀 Future of banking and AI adoption</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>AI’s Escalating Sophistication Presents New Legal Dilemmas 🚨</h3>
-                    <p>AI Agents and the Rise of Virtual Task Makers Artificial intelligence has evolved rapidly, progressing from simple automation tools to... (Source: New York State Bar Association)</p>
-                    <ul>
-                        <li>🚨 AI and the law</li>
-                        <li>📊 Legal challenges and implications</li>
-                        <li>🚀 Future of AI and the law</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>The Rise of AI Agents: Anticipating Cybersecurity Opportunities, Risks, and the Next Frontier 🚀</h3>
-                    <p>This study explores the cybersecurity implications of AI agents and presents a three-pronged framework to guide secure design and responsible deployment. (Source: R Street Institute)</p>
-                    <ul>
-                        <li>🚀 AI agents and cybersecurity</li>
-                        <li>📊 Opportunities and risks associated with AI agents</li>
-                        <li>🚀 Future of AI and cybersecurity</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 THE AI DAILY SAMACHAR</p>
-    </footer>
+        <div class="headline headline-medium">
+            <span class="icon">🧠</span>2025: The State of Generative AI in the Enterprise: For all the fears of over-investment, AI is spreading across enterprises at a pace with no precedent in modern software history. <span class="icon">⚡</span> (Source: Menlo Ventures)
+        </div>
+        <div class="headline headline-large">
+            <span class="icon">🚀</span>Trend Micro State of AI Security Report, 1H 2025: Trend Micro's State of AI Security report explores how AI's rapid adoption is transforming both business efficiency and cybercrime methods,... <span class="icon">🤖</span> (Source: www.trendmicro.com)
+        </div>
+        <div class="headline headline-medium">
+            <span class="icon">🧠</span>Why A.I. Didn’t Transform Our Lives in 2025: Cal Newport writes on autonomous A.I. agents, and predictions by such tech leaders Sam Altman and Andrej Karpathy, of OpenAI. <span class="icon">⚡</span> (Source: The New Yorker)
+        </div>
+        <div class="headline headline-large">
+            <span class="icon">🚀</span>AI tool detects LLM-generated text in research papers and peer reviews: Authors and peer reviewers are failing to disclose the use of LLMs despite journal policies limiting their use. <span class="icon">🤖</span> (Source: Nature)
+        </div>
+        <div class="headline headline-medium">
+            <span class="icon">🧠</span>The 10 Hottest Agentic AI Tools And Agents Of 2025 (So Far): AI innovation in agentic AI, agents and new products in 2025 is led by AWS, Databricks, Dataiku, Google Cloud, GitHut, IBM, Salesforce,... <span class="icon">⚡</span> (Source: CRN)
+        </div>
+        <div class="headline headline-large">
+            <span class="icon">🚀</span>LLM Suite named 2025 “Innovation of the Year” by American Banker: American Banker honored JPMorganChase with its 2025 Innovation of the Year Award Grand Prize for its work on LLM Suite, the firm's... <span class="icon">🤖</span> (Source: JPMorganChase)
+        </div>
+        <div class="headline headline-medium">
+            <span class="icon">🧠</span>Here's JPMorgan Chase's blueprint to become the world’s first fully AI-powered megabank: JPMorgan, the world's largest bank by market cap, is being "fundamentally rewired" to automate knowledge work across its operations,... <span class="icon">⚡</span> (Source: CNBC)
+        </div>
+        <div class="headline headline-large">
+            <span class="icon">🚀</span>AI’s Escalating Sophistication Presents New Legal Dilemmas: AI Agents and the Rise of Virtual Task Makers Artificial intelligence has evolved rapidly, progressing from simple automation tools to... <span class="icon">🤖</span> (Source: New York State Bar Association)
+        </div>
+        <div class="headline headline-medium">
+            <span class="icon">🧠</span>The Rise of AI Agents: Anticipating Cybersecurity Opportunities, Risks, and the Next Frontier: This study explores the cybersecurity implications of AI agents and presents a three-pronged framework to guide secure design and responsible deployment. <span class="icon">⚡</span> (Source: R Street Institute)
+        </div>
+    </div>
 </body>
 </html>
