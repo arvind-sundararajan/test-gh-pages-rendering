@@ -6,86 +6,87 @@
     <title>THE AI DAILY SAMACHAR</title>
     <style>
         :root {
-            --bg-gradient: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+            --bg-gradient: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
             --accent-red: #D32F2F;
-            --glass-bg: rgba(255, 255, 255, 0.7);
-            --text-black: #1a1a1a;
+            --glass-bg: rgba(255, 255, 255, 0.85);
+            --text-black: #212121;
+            --text-grey: #616161;
         }
 
         body {
             background: var(--bg-gradient);
             background-attachment: fixed;
             color: var(--text-black);
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             margin: 0;
-            padding: 40px 20px;
+            padding: 30px 15px;
             min-height: 100vh;
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
         header {
             text-align: center;
-            border-bottom: 8px double var(--text-black);
-            margin-bottom: 50px;
-            padding-bottom: 20px;
+            border-bottom: 3px solid var(--text-black);
+            margin-bottom: 30px;
+            padding-bottom: 15px;
         }
 
         .masthead {
-            font-size: 72px;
-            font-weight: 900;
+            font-size: 48px;
+            font-weight: 800;
             margin: 0;
             color: var(--text-black);
-            letter-spacing: -2px;
-            text-transform: uppercase;
+            letter-spacing: -1px;
+            font-family: 'Georgia', serif;
         }
 
         .subhead {
-            font-size: 18px;
+            font-size: 14px;
             color: var(--accent-red);
             font-weight: 700;
-            letter-spacing: 5px;
-            margin-top: 10px;
+            letter-spacing: 3px;
+            margin-top: 5px;
             text-transform: uppercase;
         }
 
         .date-line {
             display: flex;
             justify-content: space-between;
-            margin-top: 15px;
+            margin-top: 10px;
             font-weight: 600;
-            font-size: 14px;
-            border-top: 2px solid var(--text-black);
-            padding-top: 10px;
+            font-size: 12px;
+            border-top: 1px solid #ccc;
+            padding-top: 8px;
         }
 
         .news-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
+            gap: 15px;
         }
 
         .glass-card {
             background: var(--glass-bg);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
-            transition: transform 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            padding: 15px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+            transition: transform 0.2s ease;
             position: relative;
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            justify-content: center;
         }
 
         .glass-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
         }
 
         .accent-bar {
@@ -93,36 +94,45 @@
             left: 0;
             top: 0;
             bottom: 0;
-            width: 6px;
+            width: 4px;
             background: var(--accent-red);
         }
 
         .headline {
-            font-size: 26px;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 12px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 8px;
             color: var(--text-black);
+            font-family: 'Georgia', serif;
+        }
+
+        .summary {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 10px;
+            flex-grow: 1;
         }
 
         .source {
-            font-size: 12px;
+            font-size: 10px;
             font-weight: 700;
-            color: #666;
+            color: var(--text-grey);
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
         }
 
         @media (max-width: 768px) {
             .news-grid { grid-template-columns: 1fr; }
-            .masthead { font-size: 40px; }
+            .masthead { font-size: 32px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1 class="masthead">THE AI <span style="color: var(--accent-red);">DAILY</span> SAMACHAR</h1>
+            <h1 class="masthead">The AI <span style="color: var(--accent-red);">Daily</span> Samachar</h1>
             <div class="subhead">Autonomous Agent Edition • Real-Time AI Intel</div>
             <div class="date-line">
                 <span>VOL. I ... NO. 01</span>
@@ -135,52 +145,62 @@
             
         <div class="glass-card">
             <div class="accent-bar"></div>
-            <div class="headline">THIS MONTH IN AI: THE RISE AND RISKS OF AI SHOPPING AGENTS 🛍️💻📈</div>
+            <div class="headline">The Rise and Risks of AI Shopping Agents 🛍️</div>
+            <div class="summary">This month's AI news highlights the growth of AI-powered shopping and the latest research insights and governance moves.</div>
             <div class="source">📍 The World Economic Forum</div>
         </div>
         <div class="glass-card">
             <div class="accent-bar"></div>
-            <div class="headline">2025: THE STATE OF GENERATIVE AI IN THE ENTERPRISE 🚀💻📊</div>
+            <div class="headline">The State of Generative AI in the Enterprise in 2025 ⚡</div>
+            <div class="summary">AI is spreading across enterprises at a rapid pace, transforming business efficiency and software history.</div>
             <div class="source">📍 Menlo Ventures</div>
         </div>
         <div class="glass-card">
             <div class="accent-bar"></div>
-            <div class="headline">TREND MICRO STATE OF AI SECURITY REPORT, 1H 2025: CYBERCRIME EVOLVES WITH AI 🚨💻📊</div>
+            <div class="headline">Trend Micro's State of AI Security Report, 1H 2025 🚨</div>
+            <div class="summary">Trend Micro's report explores how AI's rapid adoption is transforming business efficiency and cybercrime methods.</div>
             <div class="source">📍 www.trendmicro.com</div>
         </div>
         <div class="glass-card">
             <div class="accent-bar"></div>
-            <div class="headline">WHY A.I. DIDN'T TRANSFORM OUR LIVES IN 2025 🤔💻📊</div>
+            <div class="headline">Why A.I. Didn't Transform Our Lives in 2025 🤔</div>
+            <div class="summary">Cal Newport writes on autonomous A.I. agents and predictions by tech leaders Sam Altman and Andrej Karpathy.</div>
             <div class="source">📍 The New Yorker</div>
         </div>
         <div class="glass-card">
             <div class="accent-bar"></div>
-            <div class="headline">AI TOOL DETECTS LLM-GENERATED TEXT IN RESEARCH PAPERS AND PEER REVIEWS 📝💻🚫</div>
+            <div class="headline">AI Tool Detects LLM-Generated Text in Research Papers and Peer Reviews 📝</div>
+            <div class="summary">Authors and peer reviewers are failing to disclose the use of LLMs despite journal policies limiting their use.</div>
             <div class="source">📍 Nature</div>
         </div>
         <div class="glass-card">
             <div class="accent-bar"></div>
-            <div class="headline">THE 10 HOTTEST AGENTIC AI TOOLS AND AGENTS OF 2025 (SO FAR) 🚀💻📈</div>
+            <div class="headline">The 10 Hottest Agentic AI Tools and Agents of 2025 🚀</div>
+            <div class="summary">AI innovation in agentic AI, agents, and new products in 2025 is led by top tech companies.</div>
             <div class="source">📍 CRN</div>
         </div>
         <div class="glass-card">
             <div class="accent-bar"></div>
-            <div class="headline">LLM SUITE NAMED 2025 “INNOVATION OF THE YEAR” BY AMERICAN BANKER 🏦💻📈</div>
+            <div class="headline">LLM Suite Named 2025 'Innovation of the Year' by American Banker 🏦</div>
+            <div class="summary">JPMorganChase's LLM Suite was honored with the 2025 Innovation of the Year Award Grand Prize.</div>
             <div class="source">📍 JPMorganChase</div>
         </div>
         <div class="glass-card">
             <div class="accent-bar"></div>
-            <div class="headline">HERE'S JPMORGAN CHASE'S BLUEPRINT TO BECOME THE WORLD’S FIRST FULLY AI-POWERED MEGABANK 🏦💻📈</div>
+            <div class="headline">JPMorgan Chase's Blueprint to Become the World's First Fully AI-Powered Megabank 💻</div>
+            <div class="summary">JPMorgan is being 'fundamentally rewired' to automate knowledge work across its operations.</div>
             <div class="source">📍 CNBC</div>
         </div>
         <div class="glass-card">
             <div class="accent-bar"></div>
-            <div class="headline">AI'S ESCALATING SOPHISTICATION PRESENTS NEW LEGAL DILEMMAS 🚫💻📊</div>
+            <div class="headline">AI's Escalating Sophistication Presents New Legal Dilemmas 📚</div>
+            <div class="summary">AI Agents and the Rise of Virtual Task Makers present new legal challenges.</div>
             <div class="source">📍 New York State Bar Association</div>
         </div>
         <div class="glass-card">
             <div class="accent-bar"></div>
-            <div class="headline">THE RISE OF AI AGENTS: ANTICIPATING CYBERSECURITY OPPORTUNITIES, RISKS, AND THE NEXT FRONTIER 🚀💻📊</div>
+            <div class="headline">The Rise of AI Agents: Anticipating Cybersecurity Opportunities, Risks, and the Next Frontier 🔒</div>
+            <div class="summary">This study explores the cybersecurity implications of AI agents and presents a three-pronged framework.</div>
             <div class="source">📍 R Street Institute</div>
         </div>
         </main>
